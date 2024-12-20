@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoffeeScript</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./src/style/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="" class="logo">CoffeAi <span>.</span> </a>
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="bx bx-x"></span>
+                <li><a href="">Home</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Testimonials</a></li>
+                <li><a href="">About us</a></li>
+                <li><a href="">Contactc us</a></li>
+            </ul>
+            <span id="menu-btn" class="bx bx-menu"></span>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="content">
+            <h1>Start Your Day With Fresh Coffee</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum similique, soluta non obcaecati assumenda
+                aliquid accusamus, eligendi, delectus tempore sunt at odio? Veniam modi delectus possimus obcaecati eum
+                laborum mollitia?</p>
+            <button>Order now</button>
+        </div>
+    </section>
+    <script>
+        const header = document.querySelector("header");
+        const body = document.querySelector("body");
+        const menuBtn = document.querySelector("#menu-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+        menuBtn.addEventListener("click", () => {
+            header.classList.toggle("show-mobile-menu");
+        })
+        closeMenuBtn.addEventListener("click", () => {
+            menuBtn.click();
+        })
+    </script>
+</body>
+
+</html>
